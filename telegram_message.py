@@ -2,8 +2,8 @@ import requests
 import time
 
 def send_to_telegram(message):
-    apiToken = ''
-    chatID = ''
+    apiToken = 'bot token'
+    chatID = 'chat id 6 digits'
     apiURL = f'https://api.telegram.org/bot{apiToken}/sendMessage'
 
     try:
@@ -14,7 +14,7 @@ def send_to_telegram(message):
 
 x = int()
 while True:
-    send_to_telegram("")
+    send_to_telegram("text what u wanna send")
     x += 1
     time.sleep(300)
 
